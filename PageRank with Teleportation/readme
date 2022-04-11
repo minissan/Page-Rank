@@ -1,1 +1,2 @@
 Google’s formulation of PageRank using a teleportation parameter value of 0.85.
+Four test input files: 3-vertex graph, spider trap, 3-vertex graph with a dead end, and a larger graph p2p-Gnutella09 obtained from snap.stanford.edu website.
