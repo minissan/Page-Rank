@@ -1,14 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 
-input_file="3_vertex_graph.txt" #open test file
+input_file="" #open test file
 input=open(input_file,"r")
-
 
 vertices=int(input.readline()) #reading the input file
 buildGraph=np.zeros((vertices,vertices))
@@ -30,11 +23,9 @@ print("\nWeb Graph:\n",buildGraph) #Print the Web Graph
 
 print("\nVertices: ",vertices) #Print vertices number
 
-
 M=np.zeros((vertices,vertices)) # Calculate Matrix
 
 outerLink=np.sum(buildGraph, axis=0)
-
 
 for i in range(vertices):
     for j in range(vertices):
@@ -67,10 +58,3 @@ for i in range(len(r)):
     output.write(strr)
                       
 output.close()
-
-
-# In[ ]:
-
-
-
-
